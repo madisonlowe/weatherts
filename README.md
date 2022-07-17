@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an application built using TypeScript in React.
 
-## Available Scripts
+The user types into the input field the city for which they wish to know the weather. The app then calls on a geolocating API, which returns all possible matches for the provided city name. The user can then click the specific location to which they were referring, and the app will then call on a weather API, using the geolocation details, and return the upcoming forecast for that area.
 
-In the project directory, you can run:
+## Installation & Running
 
-### `npm start`
+Start by forking or cloning the repo down from GitHub onto your local machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Once you have the repo copied onto your local machine, change directory into the correct folder.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Once you are in the correct folder, please run `npm i` in the terminal in order to install any dependencies.
 
-### `npm test`
+Once all packages and dependencies have been installed, make sure to add a `.env` file at root level.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure this `.env` file is listed in your `.gitignore`.
 
-### `npm run build`
+Then, add the following to your `.env` where `loremipsum` is your API key to call on the weather API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+REACT_APP_API_CALL="loremipsum"
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The API we used for our hackathon can be found at: https://openweathermap.org and there should be a free tier available for use.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Finally, run `npm start` in the terminal in order to see the application in action.
 
-### `npm run eject`
+You should be able to see the application at http://localhost:3000 once it's live.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Journey & Future Goals
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The first iteration of this app was built during a day-long hackathon at the [School of Code](https://github.com/SchoolOfCode), working in a team with [@multivit](https://github.com/multi-vit), [@Leigh-Eastell](https://github.com/Leigh-Eastell), and [@simran-toor](https://github.com/simran-toor).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The intention and learning goal in building this app was to get more practice using Typescript, which we had first started looking at two days prior to the hackathon.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Future improvements: including CSS, further separating functionality in some areas, testing.
