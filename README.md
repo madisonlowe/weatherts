@@ -6,9 +6,13 @@ The user types into the input field the city for which they wish to know the wea
 
 ## Installation & Running
 
-Start by forking or cloning the repo down from GitHub onto your local machine.
+Start by forking or cloning the repo down from GitHub onto your local machine. To do this, in the terminal, you can run:
+```
+git clone https://github.com/madisonlowe/weatherts.git
+```
+Or alternatively, click the 'fork' button on this page and follow the instructions.
 
-Once you have the repo copied onto your local machine, change directory into the correct folder.
+Once you have the repo copied onto your local machine, change directory into the correct folder, which is the `weatherts` folder.
 
 Once you are in the correct folder, please run `npm i` in the terminal in order to install any dependencies.
 
@@ -32,6 +36,6 @@ You should be able to see the application at http://localhost:3000 once it's liv
 
 The first iteration of this app was built during a day-long hackathon at the [School of Code](https://github.com/SchoolOfCode), working in a team with [@multivit](https://github.com/multi-vit), [@Leigh-Eastell](https://github.com/Leigh-Eastell), and [@simran-toor](https://github.com/simran-toor).
 
-The intention and learning goal in building this app was to get more practice using Typescript, which we had first started looking at two days prior to the hackathon.
+The intention and learning goal in building this app was to get more practice using Typescript, which we had first started looking at two days prior to the hackathon. 
 
-Future improvements: including CSS, further separating functionality in some areas, testing.
+Future improvements: adding CSS, further separating functionality in some areas, testing.
